@@ -1,0 +1,7 @@
+name: verbose_regexp
+version: 0.1.0
+author: Philipp Schiffmann <philippschiffmann93@gmail.com>
+description: Simulates verbose flag behavior for regular expressions in Dart.
+homepage: https://github.com/elaru/verbose-regexp
+dev_dependencies:
+  test: '^0.12.0'
