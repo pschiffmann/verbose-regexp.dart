@@ -16,9 +16,9 @@ const String verbosePackageUrl = 'package:verbose_regexp/verbose_regexp.dart';
 ///
 /// This logic will later move into the `apply` method of a barback transformer.
 main() {
-  var source = new File('transformer.dart').readAsStringSync();
+  var source = new File('transformer_poc.dart').readAsStringSync();
   var ast = parseCompilationUnit(source,
-      name: 'transformer.dart', parseFunctionBodies: true);
+      name: 'transformer_poc.dart', parseFunctionBodies: true);
 
   var importStatement = ast.directives.firstWhere(
       (directive) => directive is ImportDirective &&
