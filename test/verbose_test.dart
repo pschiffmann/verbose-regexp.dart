@@ -3,9 +3,8 @@ import 'package:verbose_regexp/verbose_regexp.dart';
 
 void main() {
   group('verbose', () {
-
     test('removes whitespace and comments', () {
-      var v = '''
+      final v = '''
         abc #comment
           #comment 2
             de  f
@@ -14,7 +13,7 @@ void main() {
     });
 
     test('keeps escaped whitespace and `#` characters', () {
-      var v = r'''
+      final v = r'''
         ab\ c \#comment
         \
       ''';
@@ -22,14 +21,14 @@ void main() {
     });
 
     test('ignores whitespace and `#` characters in character groups', () {
-      var v = r'''
+      final v = r'''
         a[ ]b[#] no[# ] comment
       ''';
       expect(verbose(v), equals(r'a[ ]b[#]no[# ]comment'));
     });
 
     test('leaves escape sequences and character groups intact', () {
-      var v = r'''
+      final v = r'''
         \\\\\s
         [ -z\[\]\\]
       ''';
