@@ -1,6 +1,8 @@
 RegExp verbose mode in Dart
 ===========================
 
+[![Build Status](https://travis-ci.com/pschiffmann/verbose-regexp.dart.svg?branch=master)](https://travis-ci.com/pschiffmann/verbose-regexp.dart)
+
 Overview
 --------
 
