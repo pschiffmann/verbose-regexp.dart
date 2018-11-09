@@ -3,5 +3,7 @@ version: 1.0.0
 author: Philipp Schiffmann <philippschiffmann93@gmail.com>
 description: Simulates verbose flag behavior for regular expressions in Dart.
 homepage: https://github.com/pschiffmann/verbose-regexp.dart
+environment:
+  sdk: '>=2.0.0 <3.0.0'
 dev_dependencies:
-  test: '^0.12.0'
+  test: '^1.0.0'

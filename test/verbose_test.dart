@@ -30,9 +30,9 @@ void main() {
     test('leaves escape sequences and character groups intact', () {
       final v = r'''
         \\\\\s
-        [ -z\[\]\\]
+        [ -z\[\]\ \#\\]
       ''';
-      expect(verbose(v), equals(r'\\\\\s[ -z\[\]\\]'));
+      expect(verbose(v), equals(r'\\\\\s[ -z\[\]\ \#\\]'));
     });
   });
 }
